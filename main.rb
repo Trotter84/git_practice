@@ -1,3 +1,6 @@
+require 'colorize'
+require_relative ''
+
 def puts_git(cmd)
   puts 'git #{cmd} -h'
   menu
