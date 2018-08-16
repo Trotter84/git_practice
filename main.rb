@@ -13,13 +13,13 @@ def menu
   choice = gets.to_i
   case choice
   when 1
-    puts 'Enter Git Command'
+    puts 'Enter Git Command'.colorize(:green)
     puts_git(gets.strip)
     menu
   when 2
     exit
   else
-    puts 'Invalid Choice'
+    puts 'Invalid Choice'.colorize(:red)
     menu
   end
 end
